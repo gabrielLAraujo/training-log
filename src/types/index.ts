@@ -1,20 +1,20 @@
 export interface Exercise {
-  id: string;
+  token: string;
   name: string;
 }
 
 export interface Workout {
-  id: string;
+  token: string;
   name: string;
   exercises: Exercise[];
 }
 
 export interface Session {
-  id: string;
-  workoutId: string;
+  token: string;
+  workoutToken: string;
   date: string;
   exercises: {
-    exerciseId: string;
+    exerciseToken: string;
     sets: {
       weight: number;
       reps: number;

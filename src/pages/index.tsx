@@ -9,7 +9,7 @@ export default function Home() {
 
   const addWorkout = () => {
     const newWorkout: Workout = {
-      id: Date.now().toString(),
+      token: Date.now().toString(),
       name: `Treino ${workouts.length + 1}`,
       exercises: [],
     };
@@ -28,7 +28,7 @@ export default function Home() {
       </button>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {workouts.map((workout) => (
-          <WorkoutCard key={workout.id} workout={workout} />
+          <WorkoutCard key={workout.token} workout={workout} />
         ))}
       </div>
     </div>

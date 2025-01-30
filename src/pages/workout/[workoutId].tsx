@@ -6,13 +6,13 @@ import toast from 'react-hot-toast';
 
 export default function WorkoutDetail() {
   const router = useRouter();
-  const { workoutId } = router.query;
+  const { workoutToken } = router.query;
   const [sessions, setSessions] = useState<Session[]>([]);
 
   const addSession = () => {
     const newSession: Session = {
-      id: Date.now().toString(),
-      workoutId: workoutId as string,
+      token: Date.now().toString(),
+      workoutToken: workoutToken as string,
       date: new Date().toLocaleDateString(),
       exercises: [],
     };
@@ -31,7 +31,7 @@ export default function WorkoutDetail() {
       </button>
       <div className="space-y-4">
         {sessions.map((session) => (
-          <div key={session.id} className="border p-4 rounded-lg">
+          <div key={session.token} className="border p-4 rounded-lg">
             <h2 className="text-xl font-semibold">Sessão em {session.date}</h2>
             {/* Adicionar exercícios e séries aqui */}
           </div>

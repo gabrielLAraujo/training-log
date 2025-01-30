@@ -8,7 +8,7 @@ interface WorkoutCardProps {
 
 export default function WorkoutCard({ workout }: WorkoutCardProps) {
   return (
-    <Link href={`/workouts/${workout.id}`}>
+    <Link href={`/workouts/${workout.token}`}>
       <div className="border p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
         <h2 className="text-xl font-semibold">{workout.name}</h2>
         <p className="text-gray-600">{workout.exercises.length} exercícios</p>

@@ -1,14 +1,4 @@
-export interface ExerciseFull {
-  id: number
-  name: string
-  description: string
-  category: number
-  muscles: number[]
-  equipment: number[]
-  images: string[]
-}
 
-// src/types/freeExercise.ts
 
 export interface Exercise {
   id: string

@@ -14,11 +14,28 @@ import { ExerciseSkeleton } from "@/components/exercise/ExerciseSkeleton"
 import { EmptyState } from "../components/EmptyState"
 import { Dialog, DialogContent, DialogTrigger } from "@radix-ui/react-dialog"
 import ExerciseListDialog from "@/components/exercise/ExerciseListDialog"
-
+function useDebounce<T>(value: T, delay: number): T {
+  const [debounced, setDebounced] = useState(value)
+  useEffect(() => {
+    const timer = setTimeout(() => setDebounced(value), delay)
+    return () => clearTimeout(timer)
+  }, [value, delay])
+  return debounced
+}
 export default function ExercisesPage() {
   const { exercises, isLoading } = useFreeExercises();
   const [selectedExercise, setSelectedExercise] = useState<string | undefined>(undefined);
+const [searchTerm, setSearchTerm] = useState("")
+  // 2. Debounce pra suavizar
+  const debouncedSearch = useDebounce(searchTerm, 300)
 
+  // 3. Filtragem memoizada
+  const filteredExercises = useMemo(() => {
+    if (!debouncedSearch) return exercises
+    return exercises?.filter(ex =>
+      ex.name.toLowerCase().includes(debouncedSearch.toLowerCase())
+    )
+  }, [exercises, debouncedSearch])
   return (
     <main className="container mx-auto py-10 px-4 md:px-8 max-w-3xl">
       <div className="flex flex-line gap-6">
@@ -55,25 +72,40 @@ export default function ExercisesPage() {
               </CardDescription>
             </CardHeader>
             <CardContent className="p-4 pt-0">
-              <div className="flex flex-col gap-4">
-                <label className="text-sm font-medium text-gray-700 mb-1">Selecione um exercício</label>
-                <Select
-                  value={selectedExercise}
-                  onValueChange={setSelectedExercise}
-                  disabled={isLoading || !exercises}
-                >
-                  <SelectTrigger className="w-full bg-white border-gray-300 focus:border-blue-400 focus:ring-blue-400">
-                    <SelectValue placeholder={isLoading ? "Carregando..." : "Escolha um exercício"} />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {exercises && exercises.length > 0 ? (
-                      exercises.map((ex) => (
-                        <SelectItem key={ex.id} value={ex.id.toString()}>{ex.name}</SelectItem>
-                      ))
-                    ) : null}
-                  </SelectContent>
-                </Select>
-              </div>
+               <div className="flex items-center gap-2 mb-4">
+        <Search size={20} className="text-gray-500" />
+        <Input
+          placeholder={isLoading ? "Carregando exercícios…" : "Buscar exercício..."}
+          value={searchTerm}
+          onChange={e => setSearchTerm(e.target.value)}
+          disabled={isLoading}
+          className="flex-1"
+        />
+      </div>
+
+      {/* 2) Dropdown filtrado */}
+      <Select
+        value={undefined}               // ou seu estado de seleção
+        onValueChange={() => {}}        // seu handler
+        disabled={isLoading}
+      >
+        <SelectTrigger className="w-full bg-white border-gray-300 focus:border-blue-400 focus:ring-blue-400">
+          <span>Escolha um exercício</span>
+        </SelectTrigger>
+        <SelectContent>
+          { filteredExercises && filteredExercises.length > 0 ? (
+            filteredExercises?.map(ex => (
+              <SelectItem key={ex.id} value={ex.id.toString()}>
+                {ex.name}
+              </SelectItem>
+            ))
+          ) : (
+            <div className="p-4 text-center text-gray-500">
+              Nenhum exercício encontrado.
+            </div>
+          )}
+        </SelectContent>
+      </Select>
             </CardContent>
           </Card>
         </CardContent>

@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Dumbbell, Heart, Info } from "lucide-react"
 import { Exercise } from "@/types/exercise"
+import { Dialog, DialogContent, DialogTrigger } from "@radix-ui/react-dialog"
 
 // Assuming this is the structure of your exercise object
 // Update it according to your actual data structure
@@ -54,6 +55,7 @@ export function ExerciseList({ exercises }: ExerciseListProps) {
   }
 
   return (
+
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {exercises.map((exercise) => (
         <Card

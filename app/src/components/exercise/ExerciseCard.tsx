@@ -15,7 +15,6 @@ export function ExerciseCard({ exercise: ex }: Props) {
       </CardHeader>
       <CardContent className="flex-1 space-y-2">
         <p><strong>Categoria:</strong> {ex.category}</p>
-        {/* ...demais campos */}
         <div className="grid grid-cols-2 gap-2 mt-4">
           {ex.images.map(img => (
             <div key={img} className="relative w-full h-24">

@@ -63,7 +63,7 @@ export function ExerciseList({ exercises }: ExerciseListProps) {
           {exercise.images ? (
             <div className="aspect-video w-full overflow-hidden">
               <img
-                src={exercise.images[0] || "/placeholder.svg"}
+                src={`exercises/${exercise.images[0]}` || "/placeholder.svg"}
                 alt={exercise.name}
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
               />

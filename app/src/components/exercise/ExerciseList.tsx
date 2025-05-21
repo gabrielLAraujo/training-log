@@ -55,15 +55,14 @@ export function ExerciseList({ exercises }: ExerciseListProps) {
   }
 
   return (
-
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {exercises.map((exercise) => (
         <Card
           key={exercise.id}
-          className="overflow-hidden flex flex-col h-full transition-all duration-200 hover:shadow-md"
+          className="overflow-hidden flex flex-col h-full transition-all duration-200 shadow border-0 hover:shadow-lg bg-white rounded-xl"
         >
           {exercise.images ? (
-            <div className="aspect-video w-full overflow-hidden">
+            <div className="aspect-video w-full overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100">
               <img
                 src={`exercises/${exercise.images[0]}` || "/placeholder.svg"}
                 alt={exercise.name}
@@ -76,32 +75,25 @@ export function ExerciseList({ exercises }: ExerciseListProps) {
             </div>
           )}
 
-          <CardHeader className="pb-2">
+          <CardHeader className="pb-2 px-4 pt-4">
             <div className="flex justify-between items-start">
-              <CardTitle className="text-xl">{exercise.name}</CardTitle>
-              {/* <Badge variant="outline" className={getDifficultyColor(exercise.)}>
-                {getDifficultyLabel(exercise.equipment)}
-              </Badge> */}
+              <CardTitle className="text-lg font-semibold text-blue-900 line-clamp-1">{exercise.name}</CardTitle>
             </div>
-            <CardDescription className="flex items-center mt-1">
+            <CardDescription className="flex items-center mt-1 text-blue-700">
               {getTypeIcon(exercise.force)}
-              {getTypeLabel(exercise.level
-
-              )}
+              <span className="ml-1 font-medium">{getTypeLabel(exercise.level)}</span>
             </CardDescription>
           </CardHeader>
 
-          <CardContent className="flex-grow">
-            <p className="text-sm text-muted-foreground line-clamp-3">
+          <CardContent className="flex-grow px-4 pb-2">
+            <p className="text-sm text-gray-500 line-clamp-3">
               {exercise.category || "Nenhuma descrição disponível para este exercício."}
             </p>
           </CardContent>
 
-          <CardFooter className="flex justify-between pt-2">
-            <Button variant="outline" size="sm">
-              Detalhes
-            </Button>
-            <Button size="sm">Adicionar</Button>
+          <CardFooter className="flex justify-between gap-2 pt-2 px-4 pb-4 bg-gray-50 border-t rounded-b-xl">
+            <Button variant="outline" size="sm" className="w-1/2 border-blue-200 text-blue-700 hover:bg-blue-50">Detalhes</Button>
+            <Button size="sm" className="w-1/2 bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow">Adicionar</Button>
           </CardFooter>
         </Card>
       ))}

@@ -1,25 +1,3 @@
-{
-  "name": "Standing Two-Arm Overhead Throw",
-  "force": "pull",
-  "level": "beginner",
-  "mechanic": "compound",
-  "equipment": "medicine ball",
-  "primaryMuscles": [
-    "shoulders"
-  ],
-  "secondaryMuscles": [
-    "chest",
-    "lats"
-  ],
-  "instructions": [
-    "Stand with your feet shoulder width apart holding a medicine ball in both hands. To begin, reach the medicine ball deep behind your head as you bend the knees slightly and lean back.",
-    "Violently throw the ball forward, flexing at the hip and using your whole body to complete the movement.",
-    "The medicine ball can be thrown to a partner or to a wall, receiving it as it bounces back."
-  ],
-  "category": "plyometrics",
-  "images": [
-    "Standing_Two-Arm_Overhead_Throw/0.jpg",
-    "Standing_Two-Arm_Overhead_Throw/1.jpg"
-  ],
-  "id": "Standing_Two-Arm_Overhead_Throw"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b3d3cb32746b78b6382a49007c59407c01f36b327f5f7f3ac182e2ab54ae3446
+size 848

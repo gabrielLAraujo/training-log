@@ -1,26 +1,3 @@
-{
-  "name": "Body Tricep Press",
-  "force": "push",
-  "level": "beginner",
-  "mechanic": "isolation",
-  "equipment": "body only",
-  "primaryMuscles": [
-    "triceps"
-  ],
-  "secondaryMuscles": [
-
-  ],
-  "instructions": [
-    "Position a bar in a rack at chest height.",
-    "Standing, take a shoulder width grip on the bar and step a yard or two back, feet together and arms extended so that you are leaning on the bar. This will be your starting position.",
-    "Begin by flexing the elbow, lowering yourself towards the bar.",
-    "Pause, and then reverse the motion by extending the elbows.",
-    "Progress from bodyweight by adding chains over your shoulders."
-  ],
-  "category": "strength",
-  "images": [
-    "Body_Tricep_Press/0.jpg",
-    "Body_Tricep_Press/1.jpg"
-  ],
-  "id": "Body_Tricep_Press"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:29d7d1c1fccb8570fa5ac7cb380a7cd5be77398fdf87a522aac631c014c1d230
+size 805

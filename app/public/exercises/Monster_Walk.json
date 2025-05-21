@@ -1,24 +1,3 @@
-{
-  "name": "Monster Walk",
-  "force": "pull",
-  "level": "beginner",
-  "mechanic": "compound",
-  "equipment": "bands",
-  "primaryMuscles": [
-    "abductors"
-  ],
-  "secondaryMuscles": [
-
-  ],
-  "instructions": [
-    "Place a band around both ankles and another around both knees. There should be enough tension that they are tight when your feet are shoulder width apart.",
-    "To begin, take short steps forward alternating your left and right foot.",
-    "After several steps, do just the opposite and walk backward to where you started."
-  ],
-  "category": "strength",
-  "images": [
-    "Monster_Walk/0.jpg",
-    "Monster_Walk/1.jpg"
-  ],
-  "id": "Monster_Walk"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:84905f8306935d27b15165e07355690e833e0e5e5d081a3d4e91b63215ce87a2
+size 668

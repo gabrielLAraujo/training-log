@@ -1,25 +1,3 @@
-{
-  "name": "Balance Board",
-  "force": null,
-  "level": "beginner",
-  "mechanic": "compound",
-  "equipment": "other",
-  "primaryMuscles": [
-    "calves"
-  ],
-  "secondaryMuscles": [
-    "hamstrings",
-    "quadriceps"
-  ],
-  "instructions": [
-    "Place a balance board in front of you.",
-    "Stand up on it and try to balance yourself.",
-    "Hold the balance for as long as desired."
-  ],
-  "category": "strength",
-  "images": [
-    "Balance_Board/0.jpg",
-    "Balance_Board/1.jpg"
-  ],
-  "id": "Balance_Board"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c781457877791ec6035a026ce792861f80839fb6f82d0f70b512f34435088842
+size 515

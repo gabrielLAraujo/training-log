@@ -1,25 +1,3 @@
-{
-  "name": "One-Arm Kettlebell Swings",
-  "force": "pull",
-  "level": "intermediate",
-  "mechanic": "compound",
-  "equipment": "kettlebells",
-  "primaryMuscles": [
-    "hamstrings"
-  ],
-  "secondaryMuscles": [
-    "calves",
-    "glutes",
-    "lower back",
-    "shoulders"
-  ],
-  "instructions": [
-
-  ],
-  "category": "strength",
-  "images": [
-    "One-Arm_Kettlebell_Swings/0.jpg",
-    "One-Arm_Kettlebell_Swings/1.jpg"
-  ],
-  "id": "One-Arm_Kettlebell_Swings"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3a3ba0500dbdd1664e94c84310e3df4422d22ce31240360b04ab08ed62bfde75
+size 463

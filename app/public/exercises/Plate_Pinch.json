@@ -1,26 +1,3 @@
-{
-  "name": "Plate Pinch",
-  "force": "static",
-  "level": "intermediate",
-  "mechanic": "isolation",
-  "equipment": "other",
-  "primaryMuscles": [
-    "forearms"
-  ],
-  "secondaryMuscles": [
-
-  ],
-  "instructions": [
-    "Grab two wide-rimmed plates and put them together with the smooth sides facing outward",
-    "Use your fingers to grip the outside part of the plate and your thumb for the other side thus holding both plates together. This is the starting position.",
-    "Squeeze the plate with your fingers and thumb. Hold this position for as long as you can.",
-    "Repeat for the recommended amount of sets prescribed in your program.",
-    "Switch arms and repeat the movements."
-  ],
-  "category": "strength",
-  "images": [
-    "Plate_Pinch/0.jpg",
-    "Plate_Pinch/1.jpg"
-  ],
-  "id": "Plate_Pinch"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9f2fca5562c4fd11719848534718f3a596e2c59b991a2fd74a20212ffd0fbbc4
+size 814

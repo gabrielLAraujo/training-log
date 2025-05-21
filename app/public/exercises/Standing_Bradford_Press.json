@@ -1,27 +1,3 @@
-{
-  "name": "Standing Bradford Press",
-  "force": "push",
-  "level": "beginner",
-  "mechanic": "compound",
-  "equipment": "barbell",
-  "primaryMuscles": [
-    "shoulders"
-  ],
-  "secondaryMuscles": [
-    "triceps"
-  ],
-  "instructions": [
-    "Place a loaded bar at shoulder level in a rack. With a pronated grip at shoulder width, begin with the bar racked across the front of your shoulders. This is your starting position.",
-    "Initiate the lift by extending the elbows to press the bar overhead. Avoid locking out the elbow as you move the weight behind your head.",
-    "Lower the bar down to the back of the head until your elbow forms a right angle.",
-    "Lift the bar back over your head by extending the elbows",
-    "Lower the bar down to the starting position.",
-    "Alternate in this manner until you complete the recommended amount of repetitions."
-  ],
-  "category": "strength",
-  "images": [
-    "Standing_Bradford_Press/0.jpg",
-    "Standing_Bradford_Press/1.jpg"
-  ],
-  "id": "Standing_Bradford_Press"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9f7f1b094e9db5a341bab57cecd809c2442502392c8112dc7f1278470638648c
+size 1024

@@ -1,26 +1,3 @@
-{
-  "name": "Isometric Neck Exercise - Sides",
-  "force": "static",
-  "level": "beginner",
-  "mechanic": "isolation",
-  "equipment": "body only",
-  "primaryMuscles": [
-    "neck"
-  ],
-  "secondaryMuscles": [
-
-  ],
-  "instructions": [
-    "With your head and neck in a neutral position (normal position with head erect facing forward), place your left hand on the left side of your head.",
-    "Now gently push towards the left as you contract the left neck muscles but resisting any movement of your head. Start with slow tension and increase slowly. Keep breathing normally as you execute this contraction.",
-    "Hold for the recommended number of seconds.",
-    "Now release the tension slowly.",
-    "Rest for the recommended amount of time and repeat with your right hand placed on the right side of your head."
-  ],
-  "category": "strength",
-  "images": [
-    "Isometric_Neck_Exercise_-_Sides/0.jpg",
-    "Isometric_Neck_Exercise_-_Sides/1.jpg"
-  ],
-  "id": "Isometric_Neck_Exercise_-_Sides"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1686e5bb9b5a4a23cc98f6126306ad6bb04fcd13ccb4b9304a88c77d303772d3
+size 999

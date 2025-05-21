@@ -1,22 +1,3 @@
-{
-  "name": "Upper Back Stretch",
-  "force": "static",
-  "level": "beginner",
-  "mechanic": null,
-  "equipment": null,
-  "primaryMuscles": [
-    "middle back"
-  ],
-  "secondaryMuscles": [
-    "middle back"
-  ],
-  "instructions": [
-    "Clasp fingers together with your thumbs pointing down, round your shoulders as you reach your hands forward."
-  ],
-  "category": "stretching",
-  "images": [
-    "Upper_Back_Stretch/0.jpg",
-    "Upper_Back_Stretch/1.jpg"
-  ],
-  "id": "Upper_Back_Stretch"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b2b4fdfb81096b6a9eea6f44f3c8c1b028cc021ae1304b50ece2d038ddcdf4b0
+size 491

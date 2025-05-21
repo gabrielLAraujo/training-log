@@ -1,26 +1,3 @@
-{
-  "name": "Dancer's Stretch",
-  "force": "static",
-  "level": "beginner",
-  "mechanic": null,
-  "equipment": null,
-  "primaryMuscles": [
-    "lower back"
-  ],
-  "secondaryMuscles": [
-    "abductors",
-    "glutes"
-  ],
-  "instructions": [
-    "Sit up on the floor.",
-    "Cross your right leg over your left, keeping the knee bent. Your left leg is straight and down on the floor.",
-    "Place your left arm on your right leg and your right hand on the floor.",
-    "Rotate your upper body to the right, and hold for 10-20 seconds. Switch sides."
-  ],
-  "category": "stretching",
-  "images": [
-    "Dancers_Stretch/0.jpg",
-    "Dancers_Stretch/1.jpg"
-  ],
-  "id": "Dancers_Stretch"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea7d78e3d390d84e1ce004e5794275a47e1add21f529fae7b5d77b90d762bf19
+size 684

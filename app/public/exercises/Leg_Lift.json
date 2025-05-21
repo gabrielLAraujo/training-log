@@ -1,26 +1,3 @@
-{
-  "name": "Leg Lift",
-  "force": "push",
-  "level": "beginner",
-  "mechanic": "isolation",
-  "equipment": "body only",
-  "primaryMuscles": [
-    "glutes"
-  ],
-  "secondaryMuscles": [
-    "hamstrings"
-  ],
-  "instructions": [
-    "While standing up straight with both feet next to each other at around shoulder width, grab a sturdy surface such as the sides of a squat rack or the top of a chair to brace yourself and keep balance.",
-    "With or without an ankle weight, lift one leg behind you as if performing a leg curl but standing up while keeping the other leg straight. Breathe out as you perform this movement.",
-    "Slowly bring the raised leg back to the floor as you breathe in.",
-    "Repeat for the recommended amount of repetitions.",
-    "Repeat the movement with the opposite leg."
-  ],
-  "category": "strength",
-  "images": [
-    "Leg_Lift/0.jpg",
-    "Leg_Lift/1.jpg"
-  ],
-  "id": "Leg_Lift"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bcafbfb8a929f7e42c206cfb40fe29a5661ee47ca3fbf2802ded97dd9b9fe5c0
+size 914

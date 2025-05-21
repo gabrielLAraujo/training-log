@@ -1,23 +1,3 @@
-{
-  "name": "Rear Leg Raises",
-  "force": "push",
-  "level": "beginner",
-  "mechanic": null,
-  "equipment": "body only",
-  "primaryMuscles": [
-    "quadriceps"
-  ],
-  "secondaryMuscles": [
-
-  ],
-  "instructions": [
-    "Place yourself on your hands knees on an exercise mat. Your head should be looking forward and the bend of the knees should create a 90-degree angle between the hamstrings and the calves. This will be your starting position.",
-    "Extend one leg up and behind you. The knee and hip should both extend. Repeat for 5-10 repetitions, and then switch sides."
-  ],
-  "category": "stretching",
-  "images": [
-    "Rear_Leg_Raises/0.jpg",
-    "Rear_Leg_Raises/1.jpg"
-  ],
-  "id": "Rear_Leg_Raises"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e1d7c5ab9cdecdaa2face2ee4e7ac2ef0e262e8b10fecd3125ebc2f3842f4064
+size 712

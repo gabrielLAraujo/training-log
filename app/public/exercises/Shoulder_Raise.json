@@ -1,22 +1,3 @@
-{
-  "name": "Shoulder Raise",
-  "force": "pull",
-  "level": "beginner",
-  "mechanic": null,
-  "equipment": null,
-  "primaryMuscles": [
-    "shoulders"
-  ],
-  "secondaryMuscles": [
-    "lats"
-  ],
-  "instructions": [
-    "Relax your arms to your sides and raise your shoulders up toward your ears, then back down."
-  ],
-  "category": "stretching",
-  "images": [
-    "Shoulder_Raise/0.jpg",
-    "Shoulder_Raise/1.jpg"
-  ],
-  "id": "Shoulder_Raise"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:72865ed880778b6f8cd01a42ebec7a4188feaa4c62cb4db323163fbe326d5926
+size 447

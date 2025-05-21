@@ -1,26 +1,3 @@
-{
-  "name": "Supine Chest Throw",
-  "force": "push",
-  "level": "beginner",
-  "mechanic": "compound",
-  "equipment": "medicine ball",
-  "primaryMuscles": [
-    "triceps"
-  ],
-  "secondaryMuscles": [
-    "chest",
-    "shoulders"
-  ],
-  "instructions": [
-    "This drill is great for chest passes when you lack a partner or a wall of sufficient strength. Lay on the ground on your back with your knees bent.",
-    "Begin with the ball on your chest, held with both hands on the bottom.",
-    "Explode up, extending through the elbow to throw the ball directly above you as high as possible.",
-    "Catch the ball with both hands as it comes down."
-  ],
-  "category": "plyometrics",
-  "images": [
-    "Supine_Chest_Throw/0.jpg",
-    "Supine_Chest_Throw/1.jpg"
-  ],
-  "id": "Supine_Chest_Throw"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:992bba943a2881ae823c0c0328be90aa7970d40aff7dc1a909d0f1a5042a8052
+size 792

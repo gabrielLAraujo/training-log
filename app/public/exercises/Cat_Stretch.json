@@ -1,25 +1,3 @@
-{
-  "name": "Cat Stretch",
-  "force": "static",
-  "level": "beginner",
-  "mechanic": null,
-  "equipment": null,
-  "primaryMuscles": [
-    "lower back"
-  ],
-  "secondaryMuscles": [
-    "middle back",
-    "traps"
-  ],
-  "instructions": [
-    "Position yourself on the floor on your hands and knees.",
-    "Pull your belly in and round your spine, lower back, shoulders, and neck, letting your head drop.",
-    "Hold for 15 seconds."
-  ],
-  "category": "stretching",
-  "images": [
-    "Cat_Stretch/0.jpg",
-    "Cat_Stretch/1.jpg"
-  ],
-  "id": "Cat_Stretch"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:666ac069ae6edd307d119d6e9f5799314a3094b9a867cb7af2cf02138dc25eb1
+size 555

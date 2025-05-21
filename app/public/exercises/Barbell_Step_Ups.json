@@ -1,28 +1,3 @@
-{
-  "name": "Barbell Step Ups",
-  "force": "push",
-  "level": "intermediate",
-  "mechanic": "compound",
-  "equipment": "barbell",
-  "primaryMuscles": [
-    "quadriceps"
-  ],
-  "secondaryMuscles": [
-    "calves",
-    "glutes",
-    "hamstrings",
-    "quadriceps"
-  ],
-  "instructions": [
-    "Stand up straight while holding a barbell placed on the back of your shoulders (slightly below the neck) and stand upright behind an elevated platform (such as the one used for spotting behind a flat bench). This is your starting position.",
-    "Place the right foot on the elevated platform. Step on the platform by extending the hip and the knee of your right leg. Use the heel mainly to lift the rest of your body up and place the foot of the left leg on the platform as well. Breathe out as you execute the force required to come up.",
-    "Step down with the left leg by flexing the hip and knee of the right leg as you inhale. Return to the original standing position by placing the right foot of to next to the left foot on the initial position.",
-    "Repeat with the right leg for the recommended amount of repetitions and then perform with the left leg."
-  ],
-  "category": "strength",
-  "images": [
-    "Barbell_Step_Ups/0.jpg",
-    "Barbell_Step_Ups/1.jpg"
-  ],
-  "id": "Barbell_Step_Ups"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:06f7acf72a29998ddee820a5111a4d8359843d77948aa527664e2a8ab4f381b1
+size 1294

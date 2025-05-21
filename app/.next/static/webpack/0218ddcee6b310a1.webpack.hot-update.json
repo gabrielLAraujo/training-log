@@ -1,1 +1,3 @@
-{"c":["pages/index","webpack"],"r":[],"m":["(pages-dir-browser)/./node_modules/lucide-react/dist/esm/icons/chevron-left.js","(pages-dir-browser)/./node_modules/lucide-react/dist/esm/icons/chevron-right.js","(pages-dir-browser)/./node_modules/lucide-react/dist/esm/icons/ellipsis.js","(pages-dir-browser)/./node_modules/lucide-react/dist/esm/icons/search.js","(pages-dir-browser)/./node_modules/lucide-react/dist/esm/icons/sliders-horizontal.js","(pages-dir-browser)/./src/components/ui/pagination.tsx","(pages-dir-browser)/__barrel_optimize__?names=ChevronLeft,ChevronRight,MoreHorizontal!=!./node_modules/lucide-react/dist/esm/lucide-react.js","(pages-dir-browser)/__barrel_optimize__?names=Search,SlidersHorizontal!=!./node_modules/lucide-react/dist/esm/lucide-react.js"]}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9fa011dd4b95069c0e14f58cbd580773f6f95f89744ac052cb9bfb95aef72ec3
+size 774

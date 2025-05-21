@@ -1,25 +1,3 @@
-{
-  "name": "Step Mill",
-  "force": null,
-  "level": "intermediate",
-  "mechanic": null,
-  "equipment": "machine",
-  "primaryMuscles": [
-    "quadriceps"
-  ],
-  "secondaryMuscles": [
-    "calves",
-    "glutes",
-    "hamstrings"
-  ],
-  "instructions": [
-    "To begin, step onto the stepmill and select the desired option from the menu. You can choose a manual setting, or you can select a program to run. Typically, you can enter your age and weight to estimate the amount of calories burned during exercise. Use caution so that you don't trip as you climb the stairs. It is recommended that you maintain your grip on the handles so that you don't fall.",
-    "Stepmills offer convenience, cardiovascular benefits, and usually have less impact than running outside while offering a similar rate of calories burned. They are typically much harder than other cardio equipment. A 150 lb person will typically burn over 300 calories in 30 minutes, compared to about 175 calories walking."
-  ],
-  "category": "cardio",
-  "images": [
-    "Step_Mill/0.jpg",
-    "Step_Mill/1.jpg"
-  ],
-  "id": "Step_Mill"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0e15c3e6b9a45f043375dc70266c35c557ea3ab4a520d58fd44cd3402efdcd31
+size 1099

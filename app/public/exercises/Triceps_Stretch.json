@@ -1,22 +1,3 @@
-{
-  "name": "Triceps Stretch",
-  "force": "static",
-  "level": "beginner",
-  "mechanic": "isolation",
-  "equipment": null,
-  "primaryMuscles": [
-    "triceps"
-  ],
-  "secondaryMuscles": [
-    "lats"
-  ],
-  "instructions": [
-    "Reach your hand behind your head, grasp your elbow and gently pull. Hold for 10 to 20 seconds, then switch sides."
-  ],
-  "category": "stretching",
-  "images": [
-    "Triceps_Stretch/0.jpg",
-    "Triceps_Stretch/1.jpg"
-  ],
-  "id": "Triceps_Stretch"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:71d4141af27459e49bbf97e0896707eae130a3e4235696cfb6c980c4f7da4752
+size 480

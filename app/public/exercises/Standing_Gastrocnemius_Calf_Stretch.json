@@ -1,24 +1,3 @@
-{
-  "name": "Standing Gastrocnemius Calf Stretch",
-  "force": "static",
-  "level": "beginner",
-  "mechanic": null,
-  "equipment": null,
-  "primaryMuscles": [
-    "calves"
-  ],
-  "secondaryMuscles": [
-    "hamstrings"
-  ],
-  "instructions": [
-    "Place your right heel on a step with your knee extended and lean forward to grab your right toe with your right hand. Your left knee should be slightly bent and your back should be straight.",
-    "Support your weight on your left leg and place your left hand on your left thigh.",
-    "Pull your right toes toward your knee until you feel a stretch in your calf."
-  ],
-  "category": "stretching",
-  "images": [
-    "Standing_Gastrocnemius_Calf_Stretch/0.jpg",
-    "Standing_Gastrocnemius_Calf_Stretch/1.jpg"
-  ],
-  "id": "Standing_Gastrocnemius_Calf_Stretch"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e8dde8ea815e3df37f45494e14dc50858aca6988b798adf735e5a96fe35b1071
+size 808

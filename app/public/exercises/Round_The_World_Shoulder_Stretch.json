@@ -1,25 +1,3 @@
-{
-  "name": "Round The World Shoulder Stretch",
-  "force": "static",
-  "level": "beginner",
-  "mechanic": null,
-  "equipment": "other",
-  "primaryMuscles": [
-    "shoulders"
-  ],
-  "secondaryMuscles": [
-    "biceps",
-    "chest"
-  ],
-  "instructions": [
-    "Stand up straight with your legs together, holding a bodybar or broomstick.",
-    "Hold the pole behind your hips with a wider than shoulder width grip. Your palms should be down and your thumbs facing out.",
-    "Slowly lift your arms up behind your head. Don't force it if it gets hard to lift further."
-  ],
-  "category": "stretching",
-  "images": [
-    "Round_The_World_Shoulder_Stretch/0.jpg",
-    "Round_The_World_Shoulder_Stretch/1.jpg"
-  ],
-  "id": "Round_The_World_Shoulder_Stretch"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:730b9d814608b657a35cec87926e4d23ba1545125b1e671cb1eae3d3c3d2af1a
+size 752

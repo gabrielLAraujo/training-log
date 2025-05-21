@@ -1,27 +1,3 @@
-{
-  "name": "Single-Leg Stride Jump",
-  "force": "push",
-  "level": "beginner",
-  "mechanic": "compound",
-  "equipment": "other",
-  "primaryMuscles": [
-    "quadriceps"
-  ],
-  "secondaryMuscles": [
-    "abductors",
-    "adductors",
-    "calves",
-    "hamstrings"
-  ],
-  "instructions": [
-    "Stand to the side of a box with your inside foot on top of it, close to the edge.",
-    "Begin by swinging the arms upward as you push through the top leg, jumping upward as high as possible. Attempt to drive the opposite knee upward.",
-    "Land in the same position that you started, using your inside leg to decelerate the impact."
-  ],
-  "category": "plyometrics",
-  "images": [
-    "Single-Leg_Stride_Jump/0.jpg",
-    "Single-Leg_Stride_Jump/1.jpg"
-  ],
-  "id": "Single-Leg_Stride_Jump"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:976148c84cefd9e1a05cad8cfa7cfcd9d314e848cedcfa874cd722ebca286fce
+size 786

@@ -1,28 +1,3 @@
-{
-  "name": "Push Up to Side Plank",
-  "force": "push",
-  "level": "beginner",
-  "mechanic": "compound",
-  "equipment": "body only",
-  "primaryMuscles": [
-    "chest"
-  ],
-  "secondaryMuscles": [
-    "abdominals",
-    "shoulders",
-    "triceps"
-  ],
-  "instructions": [
-    "Get into pushup position on the toes with your hands just outside of shoulder width.",
-    "Perform a pushup by allowing the elbows to flex. As you descend, keep your body straight.",
-    "Do one pushup and as you come up, shift your weight on the left side of the body, twist to the side while bringing the right arm up towards the ceiling in a side plank.",
-    "Lower the arm back to the floor for another pushup and then twist to the other side.",
-    "Repeat the series, alternating each side, for 10 or more reps."
-  ],
-  "category": "strength",
-  "images": [
-    "Push_Up_to_Side_Plank/0.jpg",
-    "Push_Up_to_Side_Plank/1.jpg"
-  ],
-  "id": "Push_Up_to_Side_Plank"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e9cb03f8f42ce5d0d62c3e58ab322b90d2671a2846093dc3ecf91bc86918a0fa
+size 948

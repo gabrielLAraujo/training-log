@@ -1,26 +1,3 @@
-{
-  "name": "Band Pull Apart",
-  "force": "pull",
-  "level": "beginner",
-  "mechanic": "isolation",
-  "equipment": "bands",
-  "primaryMuscles": [
-    "shoulders"
-  ],
-  "secondaryMuscles": [
-    "middle back",
-    "traps"
-  ],
-  "instructions": [
-    "Begin with your arms extended straight out in front of you, holding the band with both hands.",
-    "Initiate the movement by performing a reverse fly motion, moving your hands out laterally to your sides.",
-    "Keep your elbows extended as you perform the movement, bringing the band to your chest. Ensure that you keep your shoulders back during the exercise.",
-    "Pause as you complete the movement, returning to the starting position under control."
-  ],
-  "category": "strength",
-  "images": [
-    "Band_Pull_Apart/0.jpg",
-    "Band_Pull_Apart/1.jpg"
-  ],
-  "id": "Band_Pull_Apart"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:36c918a8fc658fdf49d00493b1bc561c1af3eb360482526bd040c47ade6e5602
+size 843

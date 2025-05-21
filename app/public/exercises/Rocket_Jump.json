@@ -1,25 +1,3 @@
-{
-  "name": "Rocket Jump",
-  "force": "push",
-  "level": "beginner",
-  "mechanic": "compound",
-  "equipment": "body only",
-  "primaryMuscles": [
-    "quadriceps"
-  ],
-  "secondaryMuscles": [
-    "calves",
-    "hamstrings"
-  ],
-  "instructions": [
-    "Begin in a relaxed stance with your feet shoulder width apart and hold your arms close to the body.",
-    "To initiate the move, squat down halfway and explode back up as high as possible.",
-    "Fully extend your entire body, reaching overhead as far as possible. As you land, absorb your impact through the legs."
-  ],
-  "category": "plyometrics",
-  "images": [
-    "Rocket_Jump/0.jpg",
-    "Rocket_Jump/1.jpg"
-  ],
-  "id": "Rocket_Jump"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:48936d01329fa92b3671f9a2ff76176214ed5476de7b29417a252c259ed0f54d
+size 693

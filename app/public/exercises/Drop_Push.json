@@ -1,25 +1,3 @@
-{
-  "name": "Drop Push",
-  "force": "push",
-  "level": "intermediate",
-  "mechanic": "compound",
-  "equipment": "other",
-  "primaryMuscles": [
-    "chest"
-  ],
-  "secondaryMuscles": [
-    "shoulders",
-    "triceps"
-  ],
-  "instructions": [
-    "Position low boxes or other platforms 2-3 feet apart.",
-    "Move to a pushup position between them, supporting yourself by placing your hands on the boxes.",
-    "With good posture, drop from the platforms by pressing up and moving your hands to shoulder width, cushioning your landing by absorbing the impact through the arm."
-  ],
-  "category": "plyometrics",
-  "images": [
-    "Drop_Push/0.jpg",
-    "Drop_Push/1.jpg"
-  ],
-  "id": "Drop_Push"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6778e2adc342b5981338c46173f867132876b9c47c88a38c74e51752db25dc16
+size 693

@@ -1,24 +1,3 @@
-{
-  "name": "The Straddle",
-  "force": "static",
-  "level": "beginner",
-  "mechanic": null,
-  "equipment": null,
-  "primaryMuscles": [
-    "hamstrings"
-  ],
-  "secondaryMuscles": [
-    "adductors",
-    "calves"
-  ],
-  "instructions": [
-    "Begin in a seated, upright position. Start by extending your legs in front of you in a V.",
-    "With your hands on the floor, lean forward as far as possible. Hold for 10 to 20 seconds."
-  ],
-  "category": "stretching",
-  "images": [
-    "The_Straddle/0.jpg",
-    "The_Straddle/1.jpg"
-  ],
-  "id": "The_Straddle"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0d315a6afcdc03b61ce9cf6fffa9dd76e0bce37ff916da8f7445eb1cc80ef48c
+size 556

@@ -1,28 +1,3 @@
-{
-  "name": "Kettlebell Dead Clean",
-  "force": "pull",
-  "level": "intermediate",
-  "mechanic": "compound",
-  "equipment": "kettlebells",
-  "primaryMuscles": [
-    "hamstrings"
-  ],
-  "secondaryMuscles": [
-    "calves",
-    "glutes",
-    "lower back",
-    "quadriceps",
-    "traps"
-  ],
-  "instructions": [
-    "Place kettlebell between your feet. To get in the starting position, push your butt back and look straight ahead.",
-    "Clean the kettlebell to your shoulder. Clean the kettlebell to your shoulders by extending through the legs and hips as you raise the kettlebell towards your shoulder. The wrist should rotate as you do so.",
-    "Lower the kettlebell, keeping the hamstrings loaded by keeping your back straight and your butt out."
-  ],
-  "category": "strength",
-  "images": [
-    "Kettlebell_Dead_Clean/0.jpg",
-    "Kettlebell_Dead_Clean/1.jpg"
-  ],
-  "id": "Kettlebell_Dead_Clean"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8242c7f22a8e28f04fe3b49d1577a765083779d47f6064e6eaf1c09f55ddc4b6
+size 901

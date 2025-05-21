@@ -1,24 +1,3 @@
-{
-  "name": "Bicycling",
-  "force": null,
-  "level": "beginner",
-  "mechanic": null,
-  "equipment": "other",
-  "primaryMuscles": [
-    "quadriceps"
-  ],
-  "secondaryMuscles": [
-    "calves",
-    "glutes",
-    "hamstrings"
-  ],
-  "instructions": [
-    "To begin, seat yourself on the bike and adjust the seat to your height."
-  ],
-  "category": "cardio",
-  "images": [
-    "Bicycling/0.jpg",
-    "Bicycling/1.jpg"
-  ],
-  "id": "Bicycling"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:325745ae98d20adb5457b76580b800c0cd840666bc22afe5825d52f6bfc68002
+size 439

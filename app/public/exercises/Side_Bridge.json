@@ -1,22 +1,3 @@
-{
-  "name": "Side Bridge",
-  "force": "static",
-  "level": "beginner",
-  "mechanic": null,
-  "equipment": "body only",
-  "primaryMuscles": [
-    "abdominals"
-  ],
-  "secondaryMuscles": [
-    "shoulders"
-  ],
-  "instructions": [
-
-  ],
-  "category": "strength",
-  "images": [
-    "Side_Bridge/0.jpg",
-    "Side_Bridge/1.jpg"
-  ],
-  "id": "Side_Bridge"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3c339a6abea94620aa47bab4299a3acee0d99303f246a06a42b7f59844abfc37
+size 351

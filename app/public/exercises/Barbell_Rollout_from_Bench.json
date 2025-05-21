@@ -1,27 +1,3 @@
-{
-  "name": "Barbell Rollout from Bench",
-  "force": "pull",
-  "level": "intermediate",
-  "mechanic": "compound",
-  "equipment": "barbell",
-  "primaryMuscles": [
-    "abdominals"
-  ],
-  "secondaryMuscles": [
-    "glutes",
-    "hamstrings",
-    "lats",
-    "shoulders"
-  ],
-  "instructions": [
-    "Place a loaded barbell on the ground, near the end of a bench. Kneel with both legs on the bench, and take a medium to narrow grip on the barbell. This will be your starting position.",
-    "To begin, extend through the hips to slowly roll the bar forward. As you roll out, flex the shoulder to roll the bar above your head. Ensure that your arms remain extended throughout the movement.",
-    "When the bar has been moved as far forward as possible, return to the starting position."
-  ],
-  "category": "strength",
-  "images": [
-    "Barbell_Rollout_from_Bench/0.jpg",
-    "Barbell_Rollout_from_Bench/1.jpg"
-  ],
-  "id": "Barbell_Rollout_from_Bench"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ec9a1fd62b797be89cbc370b7b8eeff7b7abecc3b6b87baa5494ebeecdeaf47c
+size 950

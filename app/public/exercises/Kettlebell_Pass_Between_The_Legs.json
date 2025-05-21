@@ -1,25 +1,3 @@
-{
-  "name": "Kettlebell Pass Between The Legs",
-  "force": "pull",
-  "level": "intermediate",
-  "mechanic": "compound",
-  "equipment": "kettlebells",
-  "primaryMuscles": [
-    "abdominals"
-  ],
-  "secondaryMuscles": [
-    "glutes",
-    "hamstrings",
-    "shoulders"
-  ],
-  "instructions": [
-    "Place one kettlebell between your legs and take a comfortable stance. Bend over by pushing your butt out and keeping your back flat.",
-    "Pick up a kettlebell and pass it to your other hand between your legs, in the fashion of a \"W\". Go back and forth for several repetitions."
-  ],
-  "category": "strength",
-  "images": [
-    "Kettlebell_Pass_Between_The_Legs/0.jpg",
-    "Kettlebell_Pass_Between_The_Legs/1.jpg"
-  ],
-  "id": "Kettlebell_Pass_Between_The_Legs"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7b9f13cdcc6967694865631441a997d14a2bb1c3945e0fce5ec46647309b1a96
+size 763

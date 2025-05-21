@@ -1,29 +1,3 @@
-{
-  "name": "Double Leg Butt Kick",
-  "force": "push",
-  "level": "beginner",
-  "mechanic": "compound",
-  "equipment": "body only",
-  "primaryMuscles": [
-    "quadriceps"
-  ],
-  "secondaryMuscles": [
-    "abductors",
-    "adductors",
-    "calves",
-    "glutes",
-    "hamstrings"
-  ],
-  "instructions": [
-    "Begin standing with your knees slightly bent.",
-    "Quickly squat a short distance, flexing the hips and knees, and immediately extend to jump for maximum vertical height.",
-    "As you go up, tuck your heels by flexing the knees, attempting to touch the buttocks.",
-    "Finish the motion by landing with the knees only partially bent, using your legs to absorb the impact."
-  ],
-  "category": "plyometrics",
-  "images": [
-    "Double_Leg_Butt_Kick/0.jpg",
-    "Double_Leg_Butt_Kick/1.jpg"
-  ],
-  "id": "Double_Leg_Butt_Kick"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dcff76305a8b4057a3e6251f3a892dc06976658bc2e9de4fde0209748a92abd0
+size 838

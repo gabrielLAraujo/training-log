@@ -1,26 +1,3 @@
-{
-  "name": "Alternating Deltoid Raise",
-  "force": "push",
-  "level": "beginner",
-  "mechanic": "isolation",
-  "equipment": "dumbbell",
-  "primaryMuscles": [
-    "shoulders"
-  ],
-  "secondaryMuscles": [
-
-  ],
-  "instructions": [
-    "In a standing position, hold a pair of dumbbells at your side.",
-    "Keeping your elbows slightly bent, raise the weights directly in front of you to shoulder height, avoiding any swinging or cheating.",
-    "Return the weights to your side.",
-    "On the next repetition, raise the weights laterally, raising them out to your side to about shoulder height.",
-    "Return the weights to the starting position and continue alternating to the front and side."
-  ],
-  "category": "strength",
-  "images": [
-    "Alternating_Deltoid_Raise/0.jpg",
-    "Alternating_Deltoid_Raise/1.jpg"
-  ],
-  "id": "Alternating_Deltoid_Raise"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:752a49db043439693d78133b275f73bca40926c36c5f80430994a5c9d14928a3
+size 858

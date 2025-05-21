@@ -1,23 +1,3 @@
-{
-  "name": "Standing Toe Touches",
-  "force": "static",
-  "level": "beginner",
-  "mechanic": null,
-  "equipment": null,
-  "primaryMuscles": [
-    "hamstrings"
-  ],
-  "secondaryMuscles": [
-    "calves"
-  ],
-  "instructions": [
-    "Stand with some space in front and behind you.",
-    "Bend at the waist, keeping your legs straight, until you can relax and let your upper body hang down in front of you. Let your arms and hands hang down naturally. Hold for 10 to 20 seconds."
-  ],
-  "category": "stretching",
-  "images": [
-    "Standing_Toe_Touches/0.jpg",
-    "Standing_Toe_Touches/1.jpg"
-  ],
-  "id": "Standing_Toe_Touches"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0eb17681074a57a54ee15a6ea7b26aa05b66a03ef45cfb43fbcd8161327dd2ca
+size 628

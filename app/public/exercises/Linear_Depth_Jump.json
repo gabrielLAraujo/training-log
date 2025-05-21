@@ -1,27 +1,3 @@
-{
-  "name": "Linear Depth Jump",
-  "force": "push",
-  "level": "intermediate",
-  "mechanic": "compound",
-  "equipment": "other",
-  "primaryMuscles": [
-    "quadriceps"
-  ],
-  "secondaryMuscles": [
-    "calves",
-    "glutes",
-    "hamstrings"
-  ],
-  "instructions": [
-    "You will need two boxes or benches spaced a few feet away from each other. Begin by standing on one box facing towards the other platform.",
-    "To initiate the movement, gently drop down to the ground between your platforms, allowing the knees and hips to flex.",
-    "Reverse the motion by exploding, extending through the hips, knees, and ankles to jump onto the other platform.",
-    "Land softly, asborbing the impact through the legs."
-  ],
-  "category": "plyometrics",
-  "images": [
-    "Linear_Depth_Jump/0.jpg",
-    "Linear_Depth_Jump/1.jpg"
-  ],
-  "id": "Linear_Depth_Jump"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:472d1bea7dd0ce55fff05b1127d4b46f8ea7792c1836072aafda3f4b7bd38144
+size 858

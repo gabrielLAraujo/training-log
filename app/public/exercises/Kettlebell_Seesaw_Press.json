@@ -1,24 +1,3 @@
-{
-  "name": "Kettlebell Seesaw Press",
-  "force": "push",
-  "level": "intermediate",
-  "mechanic": "compound",
-  "equipment": "kettlebells",
-  "primaryMuscles": [
-    "shoulders"
-  ],
-  "secondaryMuscles": [
-    "triceps"
-  ],
-  "instructions": [
-    "Clean two kettlebells two your shoulders.",
-    "Press one kettlebell.",
-    "Lower the kettlebell and immediately press the other kettlebell. Make sure to do the same amount of reps on both sides."
-  ],
-  "category": "strength",
-  "images": [
-    "Kettlebell_Seesaw_Press/0.jpg",
-    "Kettlebell_Seesaw_Press/1.jpg"
-  ],
-  "id": "Kettlebell_Seesaw_Press"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:896c9df4c6263c42a3900f881c6b8ef8b676045f9ade180e8c1425c616bc96a7
+size 609

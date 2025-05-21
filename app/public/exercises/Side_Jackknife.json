@@ -1,22 +1,3 @@
-{
-  "name": "Side Jackknife",
-  "force": "pull",
-  "level": "beginner",
-  "mechanic": "compound",
-  "equipment": "body only",
-  "primaryMuscles": [
-    "abdominals"
-  ],
-  "secondaryMuscles": [
-
-  ],
-  "instructions": [
-
-  ],
-  "category": "strength",
-  "images": [
-    "Side_Jackknife/0.jpg",
-    "Side_Jackknife/1.jpg"
-  ],
-  "id": "Side_Jackknife"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:66fccab463a178676d5fef8e69762df485d488f1cc775ccf0ee3aeafd0b444b9
+size 352

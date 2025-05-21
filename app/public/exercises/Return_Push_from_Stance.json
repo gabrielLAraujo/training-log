@@ -1,27 +1,3 @@
-{
-  "name": "Return Push from Stance",
-  "force": "push",
-  "level": "beginner",
-  "mechanic": "compound",
-  "equipment": "medicine ball",
-  "primaryMuscles": [
-    "shoulders"
-  ],
-  "secondaryMuscles": [
-    "chest",
-    "triceps"
-  ],
-  "instructions": [
-    "You will need a partner for this drill.",
-    "Begin in an athletic 2 or 3 point stance.",
-    "At the signal, move into a position to receive the pass from your partner.",
-    "Catch the medicine ball with both hands and immediately throw it back to your partner.",
-    "You can modify this drill by running different routes."
-  ],
-  "category": "plyometrics",
-  "images": [
-    "Return_Push_from_Stance/0.jpg",
-    "Return_Push_from_Stance/1.jpg"
-  ],
-  "id": "Return_Push_from_Stance"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1c82c2e45a6a231d3f68de412da6a0c8439ec12efb42d7da91562d35a80cd10a
+size 752

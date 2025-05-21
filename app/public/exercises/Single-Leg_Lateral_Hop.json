@@ -1,28 +1,3 @@
-{
-  "name": "Single-Leg Lateral Hop",
-  "force": "push",
-  "level": "beginner",
-  "mechanic": "compound",
-  "equipment": "other",
-  "primaryMuscles": [
-    "quadriceps"
-  ],
-  "secondaryMuscles": [
-    "abductors",
-    "adductors",
-    "calves",
-    "hamstrings"
-  ],
-  "instructions": [
-    "Stand to the side of a cone or hurdle. To get into the start position, stand on one leg with your knee slightly bent.",
-    "To begin, execute a counterjump to hop sideways over the cone.",
-    "Land on your jumping leg, and immediately rebound out of it by jumping back to the start position.",
-    "Continue hopping back and forth."
-  ],
-  "category": "plyometrics",
-  "images": [
-    "Single-Leg_Lateral_Hop/0.jpg",
-    "Single-Leg_Lateral_Hop/1.jpg"
-  ],
-  "id": "Single-Leg_Lateral_Hop"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1e8e6b46a1d8410f123aef302df799e7c15939d6d59625cba23cb6fe835936c4
+size 786

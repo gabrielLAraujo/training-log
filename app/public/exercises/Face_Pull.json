@@ -1,22 +1,3 @@
-{
-  "name": "Face Pull",
-  "force": "pull",
-  "level": "intermediate",
-  "mechanic": "compound",
-  "equipment": "cable",
-  "primaryMuscles": [
-    "shoulders"
-  ],
-  "secondaryMuscles": [
-    "middle back"
-  ],
-  "instructions": [
-    "Facing a high pulley with a rope or dual handles attached, pull the weight directly towards your face, separating your hands as you do so. Keep your upper arms parallel to the ground."
-  ],
-  "category": "strength",
-  "images": [
-    "Face_Pull/0.jpg",
-    "Face_Pull/1.jpg"
-  ],
-  "id": "Face_Pull"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f2d2af0f11919de23b9fe6ed4250b3b76190a220c8b140d0c047c42c6f1dd9a3
+size 537

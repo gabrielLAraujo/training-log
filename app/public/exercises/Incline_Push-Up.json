@@ -1,25 +1,3 @@
-{
-  "name": "Incline Push-Up",
-  "force": "push",
-  "level": "beginner",
-  "mechanic": "compound",
-  "equipment": "body only",
-  "primaryMuscles": [
-    "chest"
-  ],
-  "secondaryMuscles": [
-    "shoulders",
-    "triceps"
-  ],
-  "instructions": [
-    "Stand facing bench or sturdy elevated platform. Place hands on edge of bench or platform, slightly wider than shoulder width.",
-    "Position forefoot back from bench or platform with arms and body straight. Arms should be perpendicular to body. Keeping body straight, lower chest to edge of box or platform by bending arms.",
-    "Push body up until arms are extended. Repeat."
-  ],
-  "category": "strength",
-  "images": [
-    "Incline_Push-Up/0.jpg",
-    "Incline_Push-Up/1.jpg"
-  ],
-  "id": "Incline_Push-Up"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:93fad31759af21f772df4afcb7a405489e841ac95dc6ce3ba04c4191d368a350
+size 764

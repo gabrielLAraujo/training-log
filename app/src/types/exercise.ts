@@ -12,4 +12,6 @@ export interface Exercise {
   instructions: string[]
   category: string
   images: string[]
+  minRepetitions: number
+  maxRepetitions: number
 }

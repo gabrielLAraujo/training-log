@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { SearchAutocomplete } from "@/components/exercise/SearchAutocomplete";
 import { Exercise } from "@/types/exercise";
 import { useState } from "react";
+import { Routine } from "@/types/Routine";
+import { v4 as uuidv4 } from "uuid";
 
 interface RoutineFormProps {
   exercises: Exercise[];
@@ -14,11 +16,14 @@ interface RoutineFormProps {
   addedExercises: Exercise[];
   minRepetition: number;
   maxRepetition: number;
+  numberOfSets?: number; // Adicione esta propriedade se necessário
   setMinRepetition: (n: number) => void;
   setMaxRepetition: (n: number) => void;
   routineName: string;
   setRoutineName: (s: string) => void;
   setNumberOfSets: (n: number) => void;
+  setRoutines: React.Dispatch<React.SetStateAction<Routine[]>>; // Receba setRoutines como prop para atualizar a lista de rotinas
+  setAddedExercises: (exs: Exercise[]) => void; // Receba setAddedExercises como prop para resetar a lista após criar rotina
 }
 
 export default function RoutineForm({
@@ -28,12 +33,44 @@ export default function RoutineForm({
   addedExercises,
   minRepetition,
   maxRepetition,
+  numberOfSets,
   setMinRepetition,
   setMaxRepetition,
   routineName,
   setRoutineName,
-  setNumberOfSets
+  setNumberOfSets,
+  setAddedExercises,
+  setRoutines
 }: RoutineFormProps) {
+  const handleCreateRoutine = () => {
+    if (!routineName.trim()) {
+      alert("Dê um nome para a rotina!");
+      return;
+    }
+    if (addedExercises.length === 0) {
+      alert("Adicione pelo menos um exercício à rotina!");
+      return;
+    }
+  const routine: Routine = {
+    id: uuidv4(), 
+    name: routineName,
+    exercises: addedExercises.map((ex) => ({
+      ...ex,
+      minRepetitions: minRepetition,
+      maxRepetitions: maxRepetition,
+      numberOfSets: numberOfSets || 3
+    }))
+  };
+  setRoutines((prev: Routine[]) => [...prev, routine]);
+    alert("Rotina criada com sucesso!");
+    resetForm();
+  };
+  const resetForm = () => {
+    setRoutineName("");
+    setMinRepetition(0);
+    setMaxRepetition(15);
+    setAddedExercises([]);
+  };
   return (
     <Card className="shadow-lg border-0">
       <RoutineHeader />
@@ -62,7 +99,8 @@ export default function RoutineForm({
           <Input
             placeholder="Numero de Series"
             className="bg-white border-gray-300 focus:border-blue-400 focus:ring-blue-400"
-            value="3"
+            value={numberOfSets || 3}
+            type="number"
             onChange={e => setNumberOfSets(Number(e.target.value))}/>
         </div>
         <Card className="mt-6 bg-gray-50 border-0 shadow-none">
@@ -79,10 +117,10 @@ export default function RoutineForm({
         </Card>
       </CardContent>
       <CardFooter className="flex flex-col md:flex-row gap-3 p-6 border-t bg-gray-50 rounded-b-lg">
-        <Button className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow">
+        <Button className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow" onClick={handleCreateRoutine}>
           Criar Rotina
         </Button>
-        <Button variant="secondary" className="w-full md:w-auto">
+        <Button variant="secondary" className="w-full md:w-auto" onClick={resetForm}>
           Cancelar
         </Button>
       </CardFooter>

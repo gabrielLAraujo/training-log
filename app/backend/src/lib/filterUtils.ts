@@ -1,5 +1,6 @@
-import { Exercise } from '../types/exercise';
-import {FilterOptions} from '../types/filter'; 
+import { Exercise } from "@/types/exercise";
+import { FilterOptions } from "@/types/filter";
+
      
 export function getFilterOptions(exercises: Exercise[]): FilterOptions {
   return {

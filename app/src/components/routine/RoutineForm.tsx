@@ -8,6 +8,7 @@ import { Exercise } from "@/types/exercise";
 import { useState } from "react";
 import { Routine } from "@/types/Routine";
 import { v4 as uuidv4 } from "uuid";
+import { useRoutines } from "@/hooks/useRoutines";
 
 interface RoutineFormProps {
   exercises: Exercise[];
@@ -42,7 +43,8 @@ export default function RoutineForm({
   setAddedExercises,
   setRoutines
 }: RoutineFormProps) {
-  const handleCreateRoutine = () => {
+  const { addRoutine } = useRoutines();
+  const handleCreateRoutine = async () => {
     if (!routineName.trim()) {
       alert("Dê um nome para a rotina!");
       return;
@@ -51,26 +53,35 @@ export default function RoutineForm({
       alert("Adicione pelo menos um exercício à rotina!");
       return;
     }
-  const routine: Routine = {
-    id: uuidv4(), 
-    name: routineName,
-    exercises: addedExercises.map((ex) => ({
-      ...ex,
-      minRepetitions: minRepetition,
-      maxRepetitions: maxRepetition,
-      numberOfSets: numberOfSets || 3
-    }))
+
+    const routineData = {
+      id: uuidv4(),
+      name: routineName,
+      exercises: addedExercises.map((ex) => ({
+        ...ex,
+        minRepetitions: minRepetition,
+        maxRepetitions: maxRepetition,
+        numberOfSets: numberOfSets || 3
+      }))
+    };
+
+    const newRoutine = await addRoutine(routineData);
+    if (newRoutine) {
+      setRoutines(prev => [...prev, newRoutine]);
+      alert("Rotina criada com sucesso!");
+      resetForm();
+    } else {
+      alert('Erro ao criar rotina');
+    }
   };
-  setRoutines((prev: Routine[]) => [...prev, routine]);
-    alert("Rotina criada com sucesso!");
-    resetForm();
-  };
+
   const resetForm = () => {
     setRoutineName("");
     setMinRepetition(0);
     setMaxRepetition(15);
     setAddedExercises([]);
   };
+
   return (
     <Card className="shadow-lg border-0">
       <RoutineHeader />

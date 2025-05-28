@@ -1,8 +1,6 @@
 import { Routine } from "@/types/Routine";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
-import { Dumbbell, Play, Trash } from "lucide-react";
-import { Button } from "../ui/button";
-import { Title } from "@radix-ui/react-dialog";
+import RoutineCard from "./RoutineCard";
 
 export default function RoutineList({ routines,setRoutines }: { routines: Routine[], setRoutines: (routines: Routine[]) => void }) {
   const onDelete = (routine: Routine) => {
@@ -25,19 +23,7 @@ export default function RoutineList({ routines,setRoutines }: { routines: Routin
         <CardContent className="space-y-6 p-6">
         
         {routines?.map((routine, index) => (
-            
-            <Card key={routine.id}>
-                <CardHeader className="flex items-center flex-row  p-4">
-                    <Dumbbell className="h-5 w-5 text-blue-600 " />
-                    <CardTitle className="h-5 w-20">{routine.name}</CardTitle>
-                    <Button>
-                        <Trash className="h-5 w-5 text-red-600" onClick={() => onDelete(routine)} />
-                    </Button>
-                    <Button className="ml-auto rounded-full p-2" onClick={() => console.log("Iniciar rotina", routine)}>
-                        <Play />
-                    </Button>
-                </CardHeader>
-                </Card>
+            <RoutineCard key={routine.id} routine={routine} onClick={() => console.log("Iniciar rotina", routine)} onDelete={onDelete} />
         ))}
         </CardContent>
     </Card>

@@ -61,3 +61,9 @@ junit.xml
 
 # Ignore LFS pointer files for node_modules
 app/node_modules/**
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

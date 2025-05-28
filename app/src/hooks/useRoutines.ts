@@ -30,7 +30,11 @@ export function useRoutines() {
     await fetch(`${API_URL}/routines/${id}`, { method: "DELETE" });
     setRoutines((prev) => prev.filter((r) => r.id !== id));
   };
-
+  const getRoutine = async (id: string) => {
+    const res = await fetch(`${API_URL}/routines/${id}`);
+    const routine = await res.json();
+    return routine;
+  };
   const updateRoutine = async (id: string, data: Partial<Routine>) => {
     const res = await fetch(`${API_URL}/routines/${id}`, {
       method: "PATCH",
@@ -49,5 +53,6 @@ export function useRoutines() {
     deleteRoutine,
     updateRoutine,
     setRoutines,
+    getRoutine,
   };
 }

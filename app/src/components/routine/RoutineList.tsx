@@ -1,6 +1,7 @@
 import { Routine } from "@/types/Routine";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
 import RoutineCard from "./RoutineCard";
+import router from "next/router";
 
 export default function RoutineList({ routines,setRoutines }: { routines: Routine[], setRoutines: (routines: Routine[]) => void }) {
   const onDelete = (routine: Routine) => {
@@ -23,7 +24,7 @@ export default function RoutineList({ routines,setRoutines }: { routines: Routin
         <CardContent className="space-y-6 p-6">
         
         {routines?.map((routine, index) => (
-            <RoutineCard key={routine.id} routine={routine} onClick={() => console.log("Iniciar rotina", routine)} onDelete={onDelete} />
+            <RoutineCard key={routine.id} routine={routine} onClick={() => router.push(`/routine/${routine.id}`)} onDelete={onDelete} />
         ))}
         </CardContent>
     </Card>

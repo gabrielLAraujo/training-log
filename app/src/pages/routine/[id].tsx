@@ -2,6 +2,8 @@ import { Routine } from "@/types/Routine";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { useRoutines } from "@/hooks/useRoutines";
+import RoutineList from "@/components/routine/RoutineList";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function RoutinePage() {
  const [routine, setRoutine] = useState<Routine | null>(null);
@@ -17,5 +19,21 @@ export default function RoutinePage() {
     };
     fetchRoutine();
   }, [id]);
-  return <div>RoutinePage {id}</div>;
+
+  const setRoutines = (routines: Routine[]) => {
+    setRoutine(routines[0]);
+  };
+
+  return (
+    <main className="container mx-auto py-10 px-4 md:px-8 max-w-3xl">
+      <Card>
+        <CardHeader>
+          <CardTitle>{routine?.name}</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p>{routine?.exercises.map((exercise) => exercise.name).join(", ")}</p>
+        </CardContent>  
+      </Card>
+    </main>
+  );
 }

@@ -1,5 +1,3 @@
-
-
 export interface Exercise {
   id: string
   name: string
@@ -14,4 +12,5 @@ export interface Exercise {
   images: string[]
   minRepetitions: number
   maxRepetitions: number
+  numberOfSets?: number
 }

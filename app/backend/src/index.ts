@@ -1,53 +1,64 @@
 import { config } from 'dotenv';
-import Fastify from 'fastify';
+import Fastify, { FastifyInstance } from 'fastify';
+import cors from '@fastify/cors';
+import { routinesRoutes } from './routes/routines';
+import { exerciseRoutes } from './routes/exercise';
 
-// Carrega o .env da raiz do projeto
+// Load environment variables
 config({ path: '../../../.env' });
 
-const fastify = Fastify({ logger: true });
+const PORT = Number(process.env.PORT) || 3333;
+const HOST = process.env.HOST || '0.0.0.0';
+const CORS_ORIGINS = process.env.CORS_ORIGINS?.split(',') || ['http://localhost:3000'];
 
-// Debug: mostra onde está procurando e o que encontrou
-console.log('Current directory:', __dirname);
-console.log('Looking for .env at:', '../../../.env');
-console.log('Database URL:', process.env.DATABASE_URL);
-console.log('All env vars:', Object.keys(process.env).filter(key => key.includes('DATABASE')));
-
-// Registrar CORS
-fastify.register(require('@fastify/cors'), {
-  origin: ['http://localhost:3000'], // Frontend URL
+const fastify: FastifyInstance = Fastify({
+  logger: {
+    level: process.env.LOG_LEVEL || 'info',
+  },
 });
 
-// Rota de teste
-fastify.get('/health', async (request, reply) => {
-  return { status: 'ok' };
+// Register CORS, routes inside start function
+
+// Health check route
+fastify.get('/health', async () => {
+  return { 
+    status: 'ok',
+    timestamp: new Date().toISOString()
+  };
 });
 
-// Rotas de rotinas
-fastify.get('/routines', async (request, reply) => {
-  // Aqui você implementaria a busca no banco
-  return [];
-});
+// Graceful shutdown handler
+const closeGracefully = async (signal: string) => {
+  console.log(`Received signal to terminate: ${signal}`);
+  
+  await fastify.close();
+  process.exit(0);
+};
 
-interface CreateRoutineBody {
-  name: string;
-  exercises: any[];
-  // outros campos da rotina
-}
+process.on('SIGINT', () => closeGracefully('SIGINT'));
+process.on('SIGTERM', () => closeGracefully('SIGTERM'));
 
-fastify.post('/routines', async (request, reply) => {
-  const routine = request.body as CreateRoutineBody;
-  return { id: Date.now().toString(), ...routine };
-});
 
-// Iniciar servidor
 const start = async () => {
   try {
-    await fastify.listen({ port: 3333, host: '0.0.0.0' });
-    console.log('🚀 Server running on http://localhost:3333');
+    // Register CORS
+    await fastify.register(cors, {
+      origin: CORS_ORIGINS,
+      credentials: true,
+    });
+
+    // Register routes
+    await fastify.register(routinesRoutes);
+    await fastify.register(exerciseRoutes);
+
+    await fastify.listen({ port: PORT, host: HOST });
+    console.log(`🚀 Server running on http://${HOST}:${PORT}`);
   } catch (err) {
     fastify.log.error(err);
     process.exit(1);
   }
 };
-
-start();
+start().catch((err) => {
+  console.error('Failed to start server:', err);
+  process.exit(1);
+});

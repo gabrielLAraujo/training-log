@@ -1,7 +1,16 @@
 import { useState, useEffect } from "react";
 import { Routine } from "@/types/Routine";
+import axios from "axios";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3333";
+
+// Configurar axios
+const api = axios.create({
+  baseURL: API_URL,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
 
 export function useRoutines() {
   const [routines, setRoutines] = useState<Routine[]>([]);
@@ -9,41 +18,77 @@ export function useRoutines() {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`${API_URL}/routines`)
-      .then((res) => res.json())
-      .then((data) => setRoutines(data))
+    api.get('/routines')
+      .then((response) => setRoutines(response.data))
+      .catch((error) => console.error('Erro ao buscar rotinas:', error))
       .finally(() => setLoading(false));
   }, []);
 
   const addRoutine = async (routineData: Omit<Routine, "id">) => {
-    const res = await fetch(`${API_URL}/routines`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(routineData),
-    });
-    const newRoutine = await res.json();
-    setRoutines((prev) => [...prev, newRoutine]);
-    return newRoutine;
+    try {
+      console.log('Enviando dados:', routineData); // Debug
+      
+      const backendData = {
+        name: routineData.name,
+        exercises: routineData.exercises.map(exercise => ({
+          exerciseId: exercise.id,
+          minRepetitions: exercise.minRepetitions || 8,
+          maxRepetitions: exercise.maxRepetitions || 12,
+          numberOfSets: 3,
+        }))
+      };
+
+      console.log('Dados transformados:', backendData); // Debug
+      
+      const response = await api.post('/routines', backendData);
+      const newRoutine = response.data;
+      setRoutines((prev) => [...prev, newRoutine]);
+      return newRoutine;
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        console.error('Erro Axios:', {
+          message: error.message,
+          status: error.response?.status,
+          data: error.response?.data,
+          url: error.config?.url
+        });
+      } else {
+        console.error('Erro desconhecido:', error);
+      }
+      throw error;
+    }
   };
 
   const deleteRoutine = async (id: string) => {
-    await fetch(`${API_URL}/routines/${id}`, { method: "DELETE" });
-    setRoutines((prev) => prev.filter((r) => r.id !== id));
+    try {
+      await api.delete(`/routines/${id}`);
+      setRoutines((prev) => prev.filter((r) => r.id !== id));
+    } catch (error) {
+      console.error('Erro ao deletar rotina:', error);
+      throw error;
+    }
   };
+
   const getRoutine = async (id: string) => {
-    const res = await fetch(`${API_URL}/routines/${id}`);
-    const routine = await res.json();
-    return routine;
+    try {
+      const response = await api.get(`/routines/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Erro ao buscar rotina:', error);
+      throw error;
+    }
   };
+
   const updateRoutine = async (id: string, data: Partial<Routine>) => {
-    const res = await fetch(`${API_URL}/routines/${id}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
-    const updated = await res.json();
-    setRoutines((prev) => prev.map((r) => (r.id === id ? updated : r)));
-    return updated;
+    try {
+      const response = await api.patch(`/routines/${id}`, data);
+      const updated = response.data;
+      setRoutines((prev) => prev.map((r) => (r.id === id ? updated : r)));
+      return updated;
+    } catch (error) {
+      console.error('Erro ao atualizar rotina:', error);
+      throw error;
+    }
   };
 
   return {

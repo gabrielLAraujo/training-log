@@ -9,7 +9,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "../ui
 import { Input } from "../ui/input";
 import { ExerciseList } from "./ExerciseList";
 import { ExerciseSkeleton } from "./ExerciseSkeleton";
-import { useFreeExercises } from "@/hooks/useFreeExercises";
+import { useExercises } from "@/hooks/useExercises";
 import { useState, useMemo, useEffect } from "react";
 const PAGE_SIZE = 9
 
@@ -18,7 +18,7 @@ export default function ExerciseListDialog({
 }: {
   open: boolean;
 }) { 
-      const { exercises, isLoading, isError } = useFreeExercises();
+      const { exercises, isLoading, isError } = useExercises();
         const [search, setSearch] = useState("")
   const [sortBy, setSortBy] = useState("name")
   const [filterType, setFilterType] = useState("all")

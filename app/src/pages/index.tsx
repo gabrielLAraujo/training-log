@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-import { useFreeExercises } from "@/hooks/useFreeExercises";
+import { useExercises } from "@/hooks/useExercises";
 import RoutineForm from "@/components/routine/RoutineForm";
 import { Exercise } from "@/types/exercise";
 import RoutineList from "@/components/routine/RoutineList";
@@ -15,7 +15,7 @@ export default function ExercisesPage() {
   const [addedExercises, setAddedExercises] = useState<Exercise[]>([]);
   const [routineName, setRoutineName] = useState("");
   const [routines, setRoutines] = useState<Routine[]>([]);
-  const { exercises } = useFreeExercises();
+  const { exercises } = useExercises();
   const onAddExercise = (exercise: Exercise) => {
     const exerciseWithReps = {
       ...exercise,
